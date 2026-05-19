@@ -2,9 +2,9 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Replication code for the paper:
+Replication code and synthetic example data for the manuscript:
 
-> Chen, T-T., Lu, S., & Ni, J. (2026). *Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution.
+> Chen, T.-T., Lu, S., & Ni, J. *Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution.*
 
 ## Summary
 
@@ -40,9 +40,7 @@ The data underlying this paper come from three categories, with different sharin
 
 ### 1. Proprietary prescription panel — *not redistributable*
 
-The county-day-brand prescription panel used in the main analyses is licensed from a commercial pharmaceutical data provider under a Data Use Agreement (DUA) that **prohibits public redistribution** of the raw transactions and any derived county-day-product panels. A restricted Code Ocean capsule containing the proprietary panel will be submitted alongside the manuscript for editorial review under restricted access. Researchers who wish to reproduce the full analysis can contact the corresponding author for guidance on requesting access from the data provider.
-
-> Note: PNAS accepts proprietary-data papers; this Data Availability statement follows the convention for "proprietary or sensitive data that cannot be made public" per the PNAS [Editorial and Journal Policies](https://www.pnas.org/author-center/editorial-and-journal-policies).
+The county-day-brand prescription panel used in the main analyses is licensed from a commercial pharmaceutical data provider under a Data Use Agreement (DUA) that **prohibits public redistribution** of the raw transactions and any derived county-day-product panels. A restricted-access replication capsule containing the proprietary analysis panel can be prepared for editorial or data-review purposes if required. Researchers who wish to reproduce the full analysis can contact the corresponding author for guidance on requesting access from the data provider.
 
 ### 2. Public-source control variables — *fetchable from primary providers*
 
@@ -176,22 +174,6 @@ python code/validation/06_parallel_trends.py
 - **Heterogeneity features (7):** standardized Republican vote share, brand indicator, their interaction, and four G03 subcategory volume indicators (androgens, estrogens, progestins, contraceptives).
 - **Controls (13):** see `docs/methods.md` for the full list and selection rationale.
 - **BLP A-matrix:** standardized Republican vote share + Republican × brand interaction.
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{chen2026crisis,
-  title   = {Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution},
-  author  = {Chen, Ting-Tse and Lu, Steven and Ni, Jian},
-  journal = {Proceedings of the National Academy of Sciences},
-  year    = {2026},
-  note    = {Under review}
-}
-```
-
-A permanent code archive (with DOI) will be created on Zenodo at acceptance via GitHub Release integration.
 
 ## License
 

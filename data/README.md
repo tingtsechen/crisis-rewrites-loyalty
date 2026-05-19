@@ -27,7 +27,7 @@ The main analyses use county-day-brand pharmaceutical claims data from a commerc
 
 **To request access**, contact the corresponding author (see the GitHub issue tracker). Access is granted at the data provider's discretion.
 
-**For journal editorial review**, a restricted Code Ocean capsule containing the proprietary panel will be submitted alongside the manuscript for the data editor's review under restricted access.
+A restricted-access replication capsule containing the proprietary analysis panel can be prepared for editorial or data-review purposes if required.
 
 ## 2. Public-domain controls — *fetchable via scripts in `code/data/`*
 

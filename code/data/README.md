@@ -1,6 +1,6 @@
 # Public Data Download Scripts
 
-These scripts fetch the public-source control variables used in the analyses, directly from primary providers. They are provided as a transparent substitute for redistributing the data ourselves, in line with PNAS Data Availability guidelines.
+These scripts fetch the public-source control variables used in the analyses, directly from primary providers. They are provided as a transparent substitute for redistributing the data ourselves, in line with standard data-availability practice for studies that rely on a mix of proprietary and public-domain sources.
 
 ## Scripts
 
