@@ -1,0 +1,4 @@
+"subcategory","dv","variable","estimate","std_error","t_value","p_value","n_obs","n_clusters"
+"ESTROGENS","log_avg_price","(Intercept)",0.00700676713277694,0.0100001516136533,0.700666090223128,0.483523327274415,13697,122
+"ESTROGENS","log_avg_price","republican_percentage_std",0.0222675833162251,0.0140044097625366,1.59004082955309,0.111848686078426,13697,122
+"ESTROGENS","log_avg_price","republicanStd_x_brand",-0.026799366361727,0.0185725516208076,-1.44295554584447,0.149055867079074,13697,122

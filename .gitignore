@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+.venv311/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+*.Rcheck/
+.Rprofile
+
+# Data (provided via Zenodo, not GitHub)
+data/raw/
+data/final_data/
+data/processed/
+data/merged_data/
+data/external/
+data/*.csv
+data/**/*.csv
+data/**/*.parquet
+!data/README.md
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code session files
+.claude/
+.cursor/
+
+# Temporary / output dumps not meant for repo
+*.log
+*.tmp
+tmp/
+output_local/

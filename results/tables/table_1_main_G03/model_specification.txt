@@ -1,0 +1,25 @@
+GRF BLP Production — G03 (Sex Hormones)
+=========================================
+
+Date: 2026-03-12 22:25:15.375171
+Drug category: G03
+Treatment: healthrisk_impact (2020 vs 2019)
+
+Causal Forest parameters:
+  num.trees = 3000
+  min.node.size = 15
+  seed = 42
+  clusters = fips
+  W.hat = constant (deterministic treatment)
+
+Heterogeneity features (7):
+  republican_percentage_std, is_brand, republicanStd_x_brand, drug_ANDROGENS_ANABOLIC_sum, drug_CONTRACEPTIVES_sum, drug_ESTROGENS_sum, drug_PROGESTINS_sum
+
+Controls (13):
+  dspns_qty_mean, pharmacy_density, insurance_coverage_mean, patient_coverage_mean, loc_id_nunique, female_percentage, over_65_percentage, edu_bachelors, income_middle_percentage, unemployment_rate, race_white, evangelical_pct, week
+
+BLP A-matrix:
+  republican_percentage_std, republicanStd_x_brand
+
+DVs: log_sales, log_avg_price, log_transactions
+

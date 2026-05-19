@@ -1,0 +1,14 @@
+# R packages required for the primary GRF + BLP pipeline.
+# Tested with R 4.3.x.
+#
+# Install with:
+#   Rscript -e 'install.packages(readLines("environment/R_packages.txt"))'
+
+grf
+dplyr
+readr
+tidyr
+sandwich
+lmtest
+stringr
+purrr

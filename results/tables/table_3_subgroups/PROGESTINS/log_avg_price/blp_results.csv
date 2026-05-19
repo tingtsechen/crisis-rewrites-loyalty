@@ -1,0 +1,3 @@
+"subcategory","dv","variable","estimate","std_error","t_value","p_value","n_obs","n_clusters"
+"PROGESTINS","log_avg_price","(Intercept)",-0.0376902696809924,0.0184026743917762,-2.04808653778254,0.0406086836285208,4561,122
+"PROGESTINS","log_avg_price","republican_percentage_std",0.0641974444881455,0.0219871995738421,2.91976448717555,0.00352012259388068,4561,122
