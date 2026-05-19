@@ -1,37 +1,19 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using these metadata."
-title: "Crisis Rewrites Loyalty: Replication Code"
-abstract: >
-  Replication code for the paper "Crisis Rewrites Loyalty: How Political
-  Ideology Reshapes Brand-to-Generic Substitution" (under review at PNAS,
-  2026). Includes the GRF+BLP primary pipeline (R), legacy CausalForestDML
-  pipeline (Python), figure generators, validation tests, synthetic sample
-  data, and public-source download scripts.
+message: "If you use this repository, please cite it as below."
+title: "Crisis Rewrites Loyalty: Replication Code and Synthetic Sample Data"
 type: software
 authors:
-  - family-names: Chen
-    given-names: Ting-Tse
-    # TODO: add ORCID, affiliation, email before publication
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
-    # affiliation: "..."
-  # TODO: add co-authors here in the same order as the manuscript
-license: CC-BY-4.0
+  - family-names: "Chen"
+    given-names: "Ting-Tse"
 repository-code: "https://github.com/tingtsechen/crisis-rewrites-loyalty"
+url: "https://github.com/tingtsechen/crisis-rewrites-loyalty"
+version: "0.1.0"
+license: "CC-BY-4.0"
 keywords:
-  - political identity
-  - pharmaceutical switching
+  - pharmaceutical purchasing
+  - political ideology
+  - brand-to-generic substitution
   - causal forest
   - generalized random forest
-  - best linear projection
-  - heterogeneous treatment effects
   - COVID-19
-  - brand-to-generic substitution
-preferred-citation:
-  type: article
-  title: "Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution"
-  authors:
-    - family-names: Chen
-      given-names: Ting-Tse
-  journal: "Proceedings of the National Academy of Sciences"
-  year: 2026
-  notes: "Under review"
+  - reproducibility
