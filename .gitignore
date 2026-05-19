@@ -28,7 +28,7 @@ ENV/
 *.Rcheck/
 .Rprofile
 
-# Data (provided via Zenodo, not GitHub)
+# Data — proprietary panel is DUA-restricted; public controls fetched at runtime
 data/raw/
 data/final_data/
 data/processed/
@@ -37,7 +37,12 @@ data/external/
 data/*.csv
 data/**/*.csv
 data/**/*.parquet
+
+# Synthetic sample data IS committed (for code execution verification)
 !data/README.md
+!data/synthetic/
+!data/synthetic/README.md
+!data/synthetic/*.csv
 
 # Editor / IDE
 .idea/

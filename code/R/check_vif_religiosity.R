@@ -10,7 +10,7 @@ library(grf)
 args <- commandArgs(trailingOnly = FALSE)
 script_path <- sub("--file=", "", args[grep("--file=", args)])
 if (length(script_path) > 0) {
-    BASE_DIR <- dirname(dirname(normalizePath(script_path)))
+    BASE_DIR <- dirname(dirname(dirname(normalizePath(script_path))))
 } else {
     BASE_DIR <- getwd()
 }

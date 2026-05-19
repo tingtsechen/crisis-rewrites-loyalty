@@ -8,7 +8,7 @@ Replication code for the paper:
 
 ## Summary
 
-Political identity is known to shape visible consumer choices, but whether it penetrates private decisions, where no audience observes the purchase, remains unclear. Using county-level pharmaceutical claims data from the acute phase of the COVID-19 health crisis (April–June 2019 vs 2020), we investigate whether political ideology shapes private consumption decisions. Using Generalized Random Forests with Best Linear Projection (GRF+BLP) inference, we find that county-level Republican vote share significantly moderated the crisis's effect on brand-name drug sales (β = −0.034, p = 0.044): in more conservative counties, brand-name sex hormone sales declined disproportionately relative to generics, consistent with identity concealment behavior. The effect is absent in three politically neutral drug categories (all p > 0.40) and disappears within sex hormones where physician control limits patient choice.
+Political identity is known to shape visible consumer choices, but whether it penetrates private decisions, where no audience observes the purchase, remains unclear. Using county-level pharmaceutical claims data from the acute phase of the COVID-19 health crisis (April–June 2019 vs 2020), we investigate whether political ideology shapes private consumption decisions. Using Generalized Random Forests with Best Linear Projection (GRF+BLP) inference, we find that county-level Republican vote share significantly moderated the crisis's effect on brand-name drug sales (β = −0.034, p = 0.044): in more conservative counties, brand-name sex hormone sales declined disproportionately relative to generics — a pattern consistent with politically patterned brand-to-generic substitution. The effect is absent in three politically neutral drug categories (all p > 0.40) and is precisely null within sex hormones where physician-directed prescribing limits patient choice. The paper develops and tests mechanism interpretations in full.
 
 ## Repository Structure
 
@@ -40,7 +40,7 @@ The data underlying this paper come from three categories, with different sharin
 
 ### 1. Proprietary prescription panel — *not redistributable*
 
-The county-day-brand prescription panel used in the main analyses is licensed from a commercial pharmaceutical data provider under a Data Use Agreement (DUA) that **prohibits public redistribution** of the raw transactions and any derived county-day-product panels. The Code Ocean capsule submitted alongside the paper is configured for the journal's data editors to review under restricted access; researchers who wish to reproduce the full analysis can contact the corresponding author for guidance on requesting access from the data provider.
+The county-day-brand prescription panel used in the main analyses is licensed from a commercial pharmaceutical data provider under a Data Use Agreement (DUA) that **prohibits public redistribution** of the raw transactions and any derived county-day-product panels. A restricted Code Ocean capsule containing the proprietary panel will be submitted alongside the manuscript for editorial review under restricted access. Researchers who wish to reproduce the full analysis can contact the corresponding author for guidance on requesting access from the data provider.
 
 > Note: PNAS accepts proprietary-data papers; this Data Availability statement follows the convention for "proprietary or sensitive data that cannot be made public" per the PNAS [Editorial and Journal Policies](https://www.pnas.org/author-center/editorial-and-journal-policies).
 
@@ -121,7 +121,10 @@ Rscript code/R/check_vif_religiosity.R
 #### Legacy Python pipeline (robustness comparison)
 
 ```bash
+# Install Python dependencies (pip format)
 pip install -r environment/requirements.txt
+# (or equivalently, with bash installer:)
+# bash environment/install_python.sh
 
 # Stage 1: Causal Forest (3,000 trees)
 python code/python/codeOcean_CF_estiATE.py

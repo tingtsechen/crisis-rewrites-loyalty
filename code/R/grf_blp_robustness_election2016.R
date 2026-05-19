@@ -16,7 +16,7 @@ if (length(file_arg) > 0) {
 } else {
     SCRIPT_DIR <- getwd()
 }
-BASE_DIR <- dirname(SCRIPT_DIR)
+BASE_DIR <- dirname(dirname(SCRIPT_DIR))
 
 TIMESTAMP <- format(Sys.time(), "%Y%m%d_%H%M%S")
 OUTPUT_DIR <- file.path(BASE_DIR, "data_output",
