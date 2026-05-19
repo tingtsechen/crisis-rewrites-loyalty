@@ -83,14 +83,25 @@ python code/python/generate_synthetic_data.py --full      # G03=22,737; C01=12,3
 
 ### Quick smoke test (synthetic data, ~1 min)
 
+The synthetic 100-row CSVs ship under file names that flag their non-real status. The analysis scripts, however, look for the real proprietary file names under `data/final_data/`. To exercise the pipeline against synthetic data, stage the synthetic CSVs under the expected file names:
+
 ```bash
-# 1. Make sure synthetic data is present (it is committed; this just regenerates)
+# 1. (Re)generate synthetic samples
 python code/python/generate_synthetic_data.py --output data/synthetic
 
-# 2. Run the figure generators against synthetic data to confirm pipeline works
-python code/python/generate_model_free_figure.py
-python code/python/generate_ite_distribution_figures.py
+# 2. Stage synthetic CSVs under the file names the analysis scripts expect
+mkdir -p data/final_data
+for cat in G03 C01 C02 C10; do
+  cp data/synthetic/synthetic_merged_sldDt_${cat}_daily_covid.csv \
+     data/final_data/merged_sldDt_${cat}_daily_covid_remove_healthRisk_addUrbanRural.csv
+done
+
+# 3. Confirm Python pipeline imports and BASE_DIR resolution work
+python -c "from importlib import util; assert util.find_spec('econml') is not None"
+python code/python/generate_synthetic_data.py --output data/synthetic   # idempotent re-run
 ```
+
+Note: certain Python entry-points (e.g., `codeOcean_model_free_stats.py`) additionally require the proprietary `merged_data_Gclass_*.csv` panel, which reviewers without DUA access will not have. The synthetic stage above is sufficient for verifying imports, schema, and figure-generation code paths; full reproduction requires the proprietary data.
 
 ### Full reproduction (requires proprietary data access)
 

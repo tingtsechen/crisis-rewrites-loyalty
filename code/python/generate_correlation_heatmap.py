@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..', '..')
+PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..')
 
 # Style
 plt.rcParams.update({

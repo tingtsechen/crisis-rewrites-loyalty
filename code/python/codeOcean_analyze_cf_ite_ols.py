@@ -49,7 +49,7 @@ class Config:
             self.RESULTS_DIR = "/data_output"
         else:
             # Local environment
-            self.BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            self.BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
             self.DATA_DIR = os.path.join(self.BASE_DIR, "data")
             self.RESULTS_DIR = os.path.join(self.BASE_DIR, "data_output")
 

@@ -19,7 +19,7 @@ import pandas as pd
 
 # ── Paths ──
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..', '..')
+PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..')
 DATA_PATH = os.path.join(
     PROJ_ROOT, 'data', 'processed',
     'merged_data_Gclass_SldDt_04-06_2019-2020_8_states_drugCategory_county_election2020_ODY-loc.csv'

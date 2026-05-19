@@ -25,7 +25,7 @@ from scipy import stats
 
 # ── Paths ──
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..', '..')
+PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..')
 DATA_DIR = os.path.join(SCRIPT_DIR, '..', 'output', 'grf_blp_main_G03')
 ROBUST_DIR = os.path.join(SCRIPT_DIR, '..', 'output', 'grf_blp_robustness')
 SUBGRP_DIR = os.path.join(SCRIPT_DIR, '..', 'output', 'grf_blp_subgroup_G03')

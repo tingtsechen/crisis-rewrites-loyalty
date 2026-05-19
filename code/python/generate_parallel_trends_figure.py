@@ -16,7 +16,7 @@ from scipy import stats
 
 # ── Paths ──
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..', '..')
+PROJ_ROOT = os.path.join(SCRIPT_DIR, '..', '..')
 DATA_PATH = os.path.join(PROJ_ROOT, 'data', 'final_data',
                          'merged_sldDt_G03_daily_covid_remove_healthRisk_addUrbanRural.csv')
 OUT_DIR = SCRIPT_DIR
