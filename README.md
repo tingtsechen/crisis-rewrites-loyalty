@@ -4,7 +4,7 @@
 
 Replication code for the paper:
 
-> Chen, T-T. et al. (2026). *Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution.* Submitted to *Proceedings of the National Academy of Sciences*.
+> Chen, T-T., Lu, S., & Ni, J. (2026). *Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution.* Submitted to *Proceedings of the National Academy of Sciences*.
 
 ## Summary
 
@@ -173,7 +173,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @article{chen2026crisis,
   title   = {Crisis Rewrites Loyalty: How Political Ideology Reshapes Brand-to-Generic Substitution},
-  author  = {Chen, Ting-Tse and others},
+  author  = {Chen, Ting-Tse and Lu, Steven and Ni, Jian},
   journal = {Proceedings of the National Academy of Sciences},
   year    = {2026},
   note    = {Under review}

@@ -5,6 +5,10 @@ type: software
 authors:
   - family-names: "Chen"
     given-names: "Ting-Tse"
+  - family-names: "Lu"
+    given-names: "Steven"
+  - family-names: "Ni"
+    given-names: "Jian"
 repository-code: "https://github.com/tingtsechen/crisis-rewrites-loyalty"
 url: "https://github.com/tingtsechen/crisis-rewrites-loyalty"
 version: "0.1.0"
